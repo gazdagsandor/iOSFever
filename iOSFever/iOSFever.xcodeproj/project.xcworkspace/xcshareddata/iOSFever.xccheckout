@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>26647BBE-32E3-49F9-B140-2F2E2793408B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOSFever</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>119DD8BF5CCBAB714013535C9F94C4F8BE81252B</key>
+		<string>https://github.com/gazdagsandor/iOSFever.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOSFever/iOSFever.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>119DD8BF5CCBAB714013535C9F94C4F8BE81252B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/gazdagsandor/iOSFever.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>119DD8BF5CCBAB714013535C9F94C4F8BE81252B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>119DD8BF5CCBAB714013535C9F94C4F8BE81252B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSFever</string>
+		</dict>
+	</array>
+</dict>
+</plist>
