@@ -18,9 +18,17 @@
 /**
  *  Issues a GET request for the repository list with the supplied page argument
  *
- *  @param page            the page of repositories to be retrieved
+ *  @param URLString       the string of the repository endpoint
  *  @param completionBlock the block to be called upon completion
  */
-- (void)repositoriesOnPage:(NSNumber *)page completion:(void (^)(RepositoryCollection *response, NSError *error))completionBlock;
+- (void)repositoriesViaURL:(NSString *)urlString completion:(void (^)(RepositoryCollection *response, NSError *error))completionBlock;
+
+/**
+ *  Issues a GET request for the repository list
+ *  Uses repositoriesViaURL:completion: method
+ *
+ *  @param completionBlock the block to be called upon completion
+ */
+- (void)repositoriesWithCompletion:(void (^)(RepositoryCollection *response, NSError *error))completionBlock;
 
 @end

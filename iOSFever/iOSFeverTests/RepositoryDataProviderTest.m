@@ -48,7 +48,24 @@
 
 - (void)testNextRepositoryPageRequest {
     __block BOOL requestFinished = NO;
-    NSUInteger pageBeforeRequest = _provider.currentPage;
+
+    XCTAssertNil(_provider.nextPageURL, @"The prerequisite next page Url is not nil.");
+
+    [_provider repositoryPageWithCompletion:^(NSArray *repositories, NSError *error) {
+        if (error) {
+            XCTFail(@"The initial request did not succeeded.");
+            return;
+        }
+        requestFinished = YES;
+    }];
+    
+    while (!requestFinished) {
+        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.5]];
+    }
+    
+    // Re-initializing request completion marker.
+    requestFinished = NO;
+    
     [_provider nextRepositoryPageWithCompletion:^(NSArray *repositories, NSError *error) {
 
         requestFinished = YES;
@@ -62,7 +79,7 @@
         [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.5]];
     }
     
-    XCTAssert((pageBeforeRequest < _provider.currentPage),@"The provider page has not been changed.");
+    XCTAssert([_provider.nextPageURL length] > 0,@"The provider next page has not been set to the proper value.");
 }
 
 @end

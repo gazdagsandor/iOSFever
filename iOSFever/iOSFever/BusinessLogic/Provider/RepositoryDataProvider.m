@@ -3,7 +3,7 @@
 //  iOSFever
 //
 //  Created by Sandor Gazdag on 29/03/15.
-//  
+//
 //
 
 #import "RepositoryDataProvider.h"
@@ -19,7 +19,6 @@
 - (instancetype)init {
 	self = [super init];
 	if (self) {
-		_currentPage = 1;
 		_repositoryList = [[NSMutableArray alloc] init];
 	}
 	return self;
@@ -28,23 +27,41 @@
 #pragma mark - Public
 
 - (void)repositoryPageWithCompletion:(RepositoriesListCompletionBlock)completionBlock {
-	RepositoryListRequest *request = [[RepositoryListRequest alloc] init];
-	[request repositoriesOnPage:[NSNumber numberWithUnsignedInteger:_currentPage] completion: ^(RepositoryCollection *response, NSError *error) {
-	    if (_currentPage == 1) {
+
+    RepositoryListRequest *request = [[RepositoryListRequest alloc] init];
+	[request repositoriesWithCompletion: ^(RepositoryCollection *response, NSError *error) {
+	    
+        // If no next page url is supplied added then setting a clean list for Repository instances
+	    if (!self.nextPageURL || (NSNull *)self.nextPageURL == [NSNull null]) {
 	        _repositoryList = [NSMutableArray arrayWithArray:response.values];
 		}
-	    completionBlock(response.values, error);
+        
+	    if (error) {
+	        completionBlock(nil, error);
+	        return;
+		}
+	    
+        self.nextPageURL = response.next;
+	    completionBlock(response.values, nil);
 	}];
 }
 
 - (void)nextRepositoryPageWithCompletion:(RepositoriesListCompletionBlock)completionBlock {
-	_currentPage++;
 
-	[self repositoryPageWithCompletion: ^(NSArray *repositories, NSError *error) {
-	    for (Repository *repositoryItem in repositories) {
+    RepositoryListRequest *request = [[RepositoryListRequest alloc] init];
+	[request repositoriesViaURL:self.nextPageURL completion: ^(RepositoryCollection *response, NSError *error) {
+
+        if (error) {
+	        completionBlock(nil, error);
+	        return;
+		}
+
+	    // Adding additional Repositories
+	    for (Repository *repositoryItem in response.values) {
 	        [_repositoryList addObject:repositoryItem];
 		}
-	    completionBlock(repositories, error);
+
+	    completionBlock(response.values, nil);
 	}];
 }
 

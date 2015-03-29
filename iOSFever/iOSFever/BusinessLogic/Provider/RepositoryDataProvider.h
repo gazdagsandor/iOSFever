@@ -31,9 +31,9 @@ typedef void (^RepositoriesListCompletionBlock)(NSArray *repositories, NSError *
 @property (nonatomic, strong) NSMutableArray *repositoryList;
 
 /**
- *  Contains the current page index
+ *  Contains the date after string from the next url
  */
-@property (nonatomic, assign) NSUInteger currentPage;
+@property (nonatomic, strong) NSString *nextPageURL;
 
 /**
  *  Initial query for requesting the first batch of repositories
