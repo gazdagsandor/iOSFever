@@ -3,7 +3,7 @@
 //  iOSFever
 //
 //  Created by Sandor Gazdag on 29/03/15.
-//  Copyright (c) 2015 iOS Fever. All rights reserved.
+//  
 //
 
 @import Foundation;
@@ -16,30 +16,53 @@
 @end
 
 @implementation RepositoryDataProviderTest {
-    RepositoryDataProvider *_provider;
+	RepositoryDataProvider *_provider;
 }
 
 - (void)setUp {
-    [super setUp];
-    _provider = [[RepositoryDataProvider alloc] init];
+	[super setUp];
+	_provider = [[RepositoryDataProvider alloc] init];
 }
 
 - (void)tearDown {
-    _provider = nil;
-    
-    [super tearDown];
+	_provider = nil;
+
+	[super tearDown];
 }
 
 - (void)testRepositoryPageRequest {
-    
-    [_provider repositoryPageWithCompletion:^(NSArray *repositories, NSError *error) {
+	__block BOOL requestFinished = NO;
+
+	[_provider repositoryPageWithCompletion: ^(NSArray *repositories, NSError *error) {
+	    requestFinished = YES;
+	    if (error) {
+	        XCTFail(@"%@", [error localizedDescription]);
+		}
+	    XCTAssert([repositories count] > 0, @"The returned array is empty.");
+	}];
+
+	while (!requestFinished) {
+		[[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.5]];
+	}
+}
+
+- (void)testNextRepositoryPageRequest {
+    __block BOOL requestFinished = NO;
+    NSUInteger pageBeforeRequest = _provider.currentPage;
+    [_provider nextRepositoryPageWithCompletion:^(NSArray *repositories, NSError *error) {
+
+        requestFinished = YES;
         if (error) {
-            XCTFail(@"%@",[error localizedDescription]);
+            XCTFail(@"%@", [error localizedDescription]);
         }
-        XCTAssert([repositories count] > 0,@"The returned array is empty.");
+        XCTAssert([repositories count] > 0, @"The returned array is empty.");
     }];
     
-    XCTAssert(YES, @"Pass");
+    while (!requestFinished) {
+        [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.5]];
+    }
+    
+    XCTAssert((pageBeforeRequest < _provider.currentPage),@"The provider page has not been changed.");
 }
 
 @end

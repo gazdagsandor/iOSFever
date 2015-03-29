@@ -2,14 +2,14 @@
 //  Owner.h
 //
 //  Created by Sandor Gazdag on 29/03/15
-//  Copyright (c) 2015 iOS Fever. All rights reserved.
+//
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseModel.h"
 
 @class Links;
 
-@interface Owner : NSObject <NSCoding, NSCopying>
+@interface Owner : BaseModel
 
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) Links *links;

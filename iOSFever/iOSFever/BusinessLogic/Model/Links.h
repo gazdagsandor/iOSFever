@@ -2,23 +2,23 @@
 //  Links.h
 //
 //  Created by Sandor Gazdag on 29/03/15
-//  Copyright (c) 2015 iOS Fever. All rights reserved.
+//
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseModel.h"
 
-@class Forks, Avatar, Watchers, Commits, Html, SelfClass, Pullrequests;
+@class URLResource;
 
-@interface Links : NSObject <NSCoding, NSCopying>
+@interface Links : BaseModel
 
-@property (nonatomic, strong) Forks *forks;
-@property (nonatomic, strong) Avatar *avatar;
-@property (nonatomic, strong) Watchers *watchers;
-@property (nonatomic, strong) Commits *commits;
-@property (nonatomic, strong) Html *html;
-@property (nonatomic, strong) SelfClass *linksSelf;
+@property (nonatomic, strong) URLResource *forks;
+@property (nonatomic, strong) URLResource *avatar;
+@property (nonatomic, strong) URLResource *watchers;
+@property (nonatomic, strong) URLResource *commits;
+@property (nonatomic, strong) URLResource *html;
+@property (nonatomic, strong) URLResource *linksSelf;
 @property (nonatomic, strong) NSArray *clone;
-@property (nonatomic, strong) Pullrequests *pullrequests;
+@property (nonatomic, strong) URLResource *pullrequests;
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
 - (instancetype)initWithDictionary:(NSDictionary *)dict;

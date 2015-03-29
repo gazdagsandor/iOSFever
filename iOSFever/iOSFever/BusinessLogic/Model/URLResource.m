@@ -1,20 +1,18 @@
 //
-//  Clone.m
+//  URLResource.m
+//  iOSFever
 //
-//  Created by Sandor Gazdag on 29/03/15
+//  Created by Sandor Gazdag on 29/03/15.
 //
 //
 
-#import "Clone.h"
+#import "URLResource.h"
+
+NSString *const kResourceHref = @"href";
 
 
-NSString *const kCloneName = @"name";
-NSString *const kCloneHref = @"href";
+@implementation URLResource
 
-
-@implementation Clone
-
-@synthesize name = _name;
 @synthesize href = _href;
 
 
@@ -25,11 +23,8 @@ NSString *const kCloneHref = @"href";
 - (instancetype)initWithDictionary:(NSDictionary *)dict {
 	self = [super init];
 
-	// This check serves to make sure that a non-NSDictionary object
-	// passed into the model class doesn't break the parsing.
 	if (self && [dict isKindOfClass:[NSDictionary class]]) {
-		self.name = [self objectOrNilForKey:kCloneName fromDictionary:dict];
-		self.href = [self objectOrNilForKey:kCloneHref fromDictionary:dict];
+		self.href = [self objectOrNilForKey:kResourceHref fromDictionary:dict];
 	}
 
 	return self;
@@ -37,8 +32,7 @@ NSString *const kCloneHref = @"href";
 
 - (NSDictionary *)dictionaryRepresentation {
 	NSMutableDictionary *mutableDict = [NSMutableDictionary dictionary];
-	[mutableDict setValue:self.name forKey:kCloneName];
-	[mutableDict setValue:self.href forKey:kCloneHref];
+	[mutableDict setValue:self.href forKey:kResourceHref];
 
 	return [NSDictionary dictionaryWithDictionary:mutableDict];
 }

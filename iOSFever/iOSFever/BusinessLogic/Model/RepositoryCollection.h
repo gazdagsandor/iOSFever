@@ -2,14 +2,12 @@
 //  BaseClass.h
 //
 //  Created by Sandor Gazdag on 29/03/15
-//  Copyright (c) 2015 iOS Fever. All rights reserved.
+//  
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseModel.h"
 
-
-
-@interface RepositoryCollection : NSObject <NSCoding, NSCopying>
+@interface RepositoryCollection : BaseModel
 
 @property (nonatomic, strong) NSArray *values;
 @property (nonatomic, strong) NSNumber *pagelen;

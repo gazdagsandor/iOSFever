@@ -1,15 +1,15 @@
 //
-//  Values.h
+//  Repository.h
 //
 //  Created by Sandor Gazdag on 29/03/15
-//  Copyright (c) 2015 iOS Fever. All rights reserved.
+//  
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseModel.h"
 
 @class Owner, Links;
 
-@interface Values : NSObject <NSCoding, NSCopying>
+@interface Repository : BaseModel
 
 @property (nonatomic, strong) NSString *uuid;
 @property (nonatomic, strong) NSString *fullName;

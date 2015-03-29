@@ -1,15 +1,14 @@
 //
-//  Html.h
+//  URLResource.h
+//  iOSFever
 //
-//  Created by Sandor Gazdag on 29/03/15
-//  Copyright (c) 2015 iOS Fever. All rights reserved.
+//  Created by Sandor Gazdag on 29/03/15.
+//  
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseModel.h"
 
-
-
-@interface Html : NSObject <NSCoding, NSCopying>
+@interface URLResource : BaseModel
 
 @property (nonatomic, strong) NSString *href;
 

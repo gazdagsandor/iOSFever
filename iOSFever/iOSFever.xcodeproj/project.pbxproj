@@ -8,41 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		368A90B5C23C829586704AE8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57026D0AFE891AB3E248938F /* libPods.a */; };
+		EF01956E1AC86EAA0033C6C3 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01956D1AC86EAA0033C6C3 /* BaseModel.m */; };
 		EF34EDAB1AC7FAAA00AE6C61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDAA1AC7FAAA00AE6C61 /* main.m */; };
 		EF34EDAE1AC7FAAA00AE6C61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDAD1AC7FAAA00AE6C61 /* AppDelegate.m */; };
 		EF34EDB41AC7FAAA00AE6C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF34EDB21AC7FAAA00AE6C61 /* Main.storyboard */; };
 		EF34EDB61AC7FAAA00AE6C61 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF34EDB51AC7FAAA00AE6C61 /* Images.xcassets */; };
 		EF34EDB91AC7FAAA00AE6C61 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF34EDB71AC7FAAA00AE6C61 /* LaunchScreen.xib */; };
-		EF34EDD21AC801F100AE6C61 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDD11AC801F100AE6C61 /* ViewController.m */; };
-		EF34EDED1AC8038000AE6C61 /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDD51AC8038000AE6C61 /* Avatar.m */; };
 		EF34EDEE1AC8038000AE6C61 /* RepositoryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDD71AC8038000AE6C61 /* RepositoryCollection.m */; };
 		EF34EDEF1AC8038000AE6C61 /* Clone.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDD91AC8038000AE6C61 /* Clone.m */; };
-		EF34EDF01AC8038000AE6C61 /* Commits.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDDB1AC8038000AE6C61 /* Commits.m */; };
-		EF34EDF11AC8038000AE6C61 /* Forks.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDDE1AC8038000AE6C61 /* Forks.m */; };
-		EF34EDF21AC8038000AE6C61 /* Html.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDE01AC8038000AE6C61 /* Html.m */; };
 		EF34EDF31AC8038000AE6C61 /* Links.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDE21AC8038000AE6C61 /* Links.m */; };
 		EF34EDF41AC8038000AE6C61 /* Owner.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDE41AC8038000AE6C61 /* Owner.m */; };
-		EF34EDF51AC8038000AE6C61 /* Pullrequests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDE61AC8038000AE6C61 /* Pullrequests.m */; };
-		EF34EDF61AC8038000AE6C61 /* SelfClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDE81AC8038000AE6C61 /* SelfClass.m */; };
-		EF34EDF71AC8038000AE6C61 /* Values.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDEA1AC8038000AE6C61 /* Values.m */; };
-		EF34EDF81AC8038000AE6C61 /* Watchers.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDEC1AC8038000AE6C61 /* Watchers.m */; };
+		EF34EDF71AC8038000AE6C61 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDEA1AC8038000AE6C61 /* Repository.m */; };
 		EF34EDFF1AC8067700AE6C61 /* RepositoryListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDFE1AC8067700AE6C61 /* RepositoryListRequest.m */; };
 		EF461D5B1AC80B2D006F6A75 /* RepositoryDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = EF461D5A1AC80B2D006F6A75 /* RepositoryDataProvider.m */; };
 		EF461D5C1AC80B2D006F6A75 /* RepositoryDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = EF461D5A1AC80B2D006F6A75 /* RepositoryDataProvider.m */; };
 		EF461D5D1AC80B50006F6A75 /* RepositoryListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDFE1AC8067700AE6C61 /* RepositoryListRequest.m */; };
-		EF461D5E1AC80B50006F6A75 /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDD51AC8038000AE6C61 /* Avatar.m */; };
 		EF461D5F1AC80B50006F6A75 /* RepositoryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDD71AC8038000AE6C61 /* RepositoryCollection.m */; };
 		EF461D601AC80B50006F6A75 /* Clone.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDD91AC8038000AE6C61 /* Clone.m */; };
-		EF461D611AC80B50006F6A75 /* Commits.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDDB1AC8038000AE6C61 /* Commits.m */; };
-		EF461D621AC80B50006F6A75 /* Forks.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDDE1AC8038000AE6C61 /* Forks.m */; };
-		EF461D631AC80B50006F6A75 /* Html.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDE01AC8038000AE6C61 /* Html.m */; };
 		EF461D641AC80B50006F6A75 /* Links.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDE21AC8038000AE6C61 /* Links.m */; };
 		EF461D651AC80B50006F6A75 /* Owner.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDE41AC8038000AE6C61 /* Owner.m */; };
-		EF461D661AC80B50006F6A75 /* Pullrequests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDE61AC8038000AE6C61 /* Pullrequests.m */; };
-		EF461D671AC80B50006F6A75 /* SelfClass.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDE81AC8038000AE6C61 /* SelfClass.m */; };
-		EF461D681AC80B50006F6A75 /* Values.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDEA1AC8038000AE6C61 /* Values.m */; };
-		EF461D691AC80B50006F6A75 /* Watchers.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDEC1AC8038000AE6C61 /* Watchers.m */; };
+		EF461D681AC80B50006F6A75 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDEA1AC8038000AE6C61 /* Repository.m */; };
 		EF461D6B1AC80F0D006F6A75 /* RepositoryDataProviderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF461D6A1AC80F0D006F6A75 /* RepositoryDataProviderTest.m */; };
+		EF6675DD1AC82FE90094D37C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6675DC1AC82FE90094D37C /* SystemConfiguration.framework */; };
+		EF6675DF1AC82FF10094D37C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6675DE1AC82FF10094D37C /* MobileCoreServices.framework */; };
+		EF6675EC1AC85C210094D37C /* RepositoryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6675EA1AC85C210094D37C /* RepositoryListViewController.m */; };
+		EF6675EF1AC85C430094D37C /* RepositoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6675EE1AC85C430094D37C /* RepositoryTableViewCell.m */; };
+		EF6675F21AC865E50094D37C /* URLResource.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6675F11AC865E50094D37C /* URLResource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +49,8 @@
 /* Begin PBXFileReference section */
 		57026D0AFE891AB3E248938F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D872233A56AFDCFA074C292B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EF01956C1AC86EAA0033C6C3 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		EF01956D1AC86EAA0033C6C3 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		EF34EDA51AC7FAAA00AE6C61 /* iOSFever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF34EDA91AC7FAAA00AE6C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF34EDAA1AC7FAAA00AE6C61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,38 +61,29 @@
 		EF34EDB81AC7FAAA00AE6C61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EF34EDBE1AC7FAAB00AE6C61 /* iOSFeverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFeverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF34EDC31AC7FAAB00AE6C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EF34EDD01AC801F100AE6C61 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EF34EDD11AC801F100AE6C61 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EF34EDD41AC8038000AE6C61 /* Avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
-		EF34EDD51AC8038000AE6C61 /* Avatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
 		EF34EDD61AC8038000AE6C61 /* RepositoryCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryCollection.h; sourceTree = "<group>"; };
 		EF34EDD71AC8038000AE6C61 /* RepositoryCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryCollection.m; sourceTree = "<group>"; };
 		EF34EDD81AC8038000AE6C61 /* Clone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clone.h; sourceTree = "<group>"; };
 		EF34EDD91AC8038000AE6C61 /* Clone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clone.m; sourceTree = "<group>"; };
-		EF34EDDA1AC8038000AE6C61 /* Commits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commits.h; sourceTree = "<group>"; };
-		EF34EDDB1AC8038000AE6C61 /* Commits.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commits.m; sourceTree = "<group>"; };
-		EF34EDDC1AC8038000AE6C61 /* DataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModels.h; sourceTree = "<group>"; };
-		EF34EDDD1AC8038000AE6C61 /* Forks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forks.h; sourceTree = "<group>"; };
-		EF34EDDE1AC8038000AE6C61 /* Forks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Forks.m; sourceTree = "<group>"; };
-		EF34EDDF1AC8038000AE6C61 /* Html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Html.h; sourceTree = "<group>"; };
-		EF34EDE01AC8038000AE6C61 /* Html.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Html.m; sourceTree = "<group>"; };
 		EF34EDE11AC8038000AE6C61 /* Links.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Links.h; sourceTree = "<group>"; };
 		EF34EDE21AC8038000AE6C61 /* Links.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Links.m; sourceTree = "<group>"; };
 		EF34EDE31AC8038000AE6C61 /* Owner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Owner.h; sourceTree = "<group>"; };
 		EF34EDE41AC8038000AE6C61 /* Owner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Owner.m; sourceTree = "<group>"; };
-		EF34EDE51AC8038000AE6C61 /* Pullrequests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pullrequests.h; sourceTree = "<group>"; };
-		EF34EDE61AC8038000AE6C61 /* Pullrequests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pullrequests.m; sourceTree = "<group>"; };
-		EF34EDE71AC8038000AE6C61 /* SelfClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfClass.h; sourceTree = "<group>"; };
-		EF34EDE81AC8038000AE6C61 /* SelfClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfClass.m; sourceTree = "<group>"; };
-		EF34EDE91AC8038000AE6C61 /* Values.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Values.h; sourceTree = "<group>"; };
-		EF34EDEA1AC8038000AE6C61 /* Values.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Values.m; sourceTree = "<group>"; };
-		EF34EDEB1AC8038000AE6C61 /* Watchers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Watchers.h; sourceTree = "<group>"; };
-		EF34EDEC1AC8038000AE6C61 /* Watchers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Watchers.m; sourceTree = "<group>"; };
+		EF34EDE91AC8038000AE6C61 /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
+		EF34EDEA1AC8038000AE6C61 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repository.m; sourceTree = "<group>"; };
 		EF34EDFD1AC8067700AE6C61 /* RepositoryListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryListRequest.h; sourceTree = "<group>"; };
 		EF34EDFE1AC8067700AE6C61 /* RepositoryListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryListRequest.m; sourceTree = "<group>"; };
 		EF461D591AC80B2D006F6A75 /* RepositoryDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryDataProvider.h; sourceTree = "<group>"; };
 		EF461D5A1AC80B2D006F6A75 /* RepositoryDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryDataProvider.m; sourceTree = "<group>"; };
 		EF461D6A1AC80F0D006F6A75 /* RepositoryDataProviderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryDataProviderTest.m; sourceTree = "<group>"; };
+		EF6675DC1AC82FE90094D37C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EF6675DE1AC82FF10094D37C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EF6675E91AC85C210094D37C /* RepositoryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryListViewController.h; sourceTree = "<group>"; };
+		EF6675EA1AC85C210094D37C /* RepositoryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryListViewController.m; sourceTree = "<group>"; };
+		EF6675ED1AC85C430094D37C /* RepositoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepositoryTableViewCell.h; sourceTree = "<group>"; };
+		EF6675EE1AC85C430094D37C /* RepositoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryTableViewCell.m; sourceTree = "<group>"; };
+		EF6675F01AC865E50094D37C /* URLResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLResource.h; sourceTree = "<group>"; };
+		EF6675F11AC865E50094D37C /* URLResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLResource.m; sourceTree = "<group>"; };
 		FB8272BEE9E60527C79217F6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF6675DF1AC82FF10094D37C /* MobileCoreServices.framework in Frameworks */,
+				EF6675DD1AC82FE90094D37C /* SystemConfiguration.framework in Frameworks */,
 				368A90B5C23C829586704AE8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +120,8 @@
 		9055842D1C19F340856824E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF6675DE1AC82FF10094D37C /* MobileCoreServices.framework */,
+				EF6675DC1AC82FE90094D37C /* SystemConfiguration.framework */,
 				57026D0AFE891AB3E248938F /* libPods.a */,
 			);
 			name = Frameworks;
@@ -212,8 +200,7 @@
 		EF34EDCF1AC801AC00AE6C61 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				EF34EDD01AC801F100AE6C61 /* ViewController.h */,
-				EF34EDD11AC801F100AE6C61 /* ViewController.m */,
+				EF6675E01AC85A730094D37C /* ViewController */,
 				EF34EDB21AC7FAAA00AE6C61 /* Main.storyboard */,
 			);
 			path = UI;
@@ -222,31 +209,20 @@
 		EF34EDD31AC8038000AE6C61 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EF34EDD41AC8038000AE6C61 /* Avatar.h */,
-				EF34EDD51AC8038000AE6C61 /* Avatar.m */,
-				EF34EDD61AC8038000AE6C61 /* RepositoryCollection.h */,
-				EF34EDD71AC8038000AE6C61 /* RepositoryCollection.m */,
+				EF01956C1AC86EAA0033C6C3 /* BaseModel.h */,
+				EF01956D1AC86EAA0033C6C3 /* BaseModel.m */,
 				EF34EDD81AC8038000AE6C61 /* Clone.h */,
 				EF34EDD91AC8038000AE6C61 /* Clone.m */,
-				EF34EDDA1AC8038000AE6C61 /* Commits.h */,
-				EF34EDDB1AC8038000AE6C61 /* Commits.m */,
-				EF34EDDC1AC8038000AE6C61 /* DataModels.h */,
-				EF34EDDD1AC8038000AE6C61 /* Forks.h */,
-				EF34EDDE1AC8038000AE6C61 /* Forks.m */,
-				EF34EDDF1AC8038000AE6C61 /* Html.h */,
-				EF34EDE01AC8038000AE6C61 /* Html.m */,
 				EF34EDE11AC8038000AE6C61 /* Links.h */,
 				EF34EDE21AC8038000AE6C61 /* Links.m */,
 				EF34EDE31AC8038000AE6C61 /* Owner.h */,
 				EF34EDE41AC8038000AE6C61 /* Owner.m */,
-				EF34EDE51AC8038000AE6C61 /* Pullrequests.h */,
-				EF34EDE61AC8038000AE6C61 /* Pullrequests.m */,
-				EF34EDE71AC8038000AE6C61 /* SelfClass.h */,
-				EF34EDE81AC8038000AE6C61 /* SelfClass.m */,
-				EF34EDE91AC8038000AE6C61 /* Values.h */,
-				EF34EDEA1AC8038000AE6C61 /* Values.m */,
-				EF34EDEB1AC8038000AE6C61 /* Watchers.h */,
-				EF34EDEC1AC8038000AE6C61 /* Watchers.m */,
+				EF34EDE91AC8038000AE6C61 /* Repository.h */,
+				EF34EDEA1AC8038000AE6C61 /* Repository.m */,
+				EF34EDD61AC8038000AE6C61 /* RepositoryCollection.h */,
+				EF34EDD71AC8038000AE6C61 /* RepositoryCollection.m */,
+				EF6675F01AC865E50094D37C /* URLResource.h */,
+				EF6675F11AC865E50094D37C /* URLResource.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,6 +243,33 @@
 				EF461D5A1AC80B2D006F6A75 /* RepositoryDataProvider.m */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		EF6675E01AC85A730094D37C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EF6675E81AC85C210094D37C /* Repository */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EF6675E81AC85C210094D37C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EF6675E91AC85C210094D37C /* RepositoryListViewController.h */,
+				EF6675EA1AC85C210094D37C /* RepositoryListViewController.m */,
+				EF6675EB1AC85C210094D37C /* Views */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EF6675EB1AC85C210094D37C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF6675ED1AC85C430094D37C /* RepositoryTableViewCell.h */,
+				EF6675EE1AC85C430094D37C /* RepositoryTableViewCell.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,22 +407,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF34EDD21AC801F100AE6C61 /* ViewController.m in Sources */,
-				EF34EDF71AC8038000AE6C61 /* Values.m in Sources */,
+				EF34EDF71AC8038000AE6C61 /* Repository.m in Sources */,
 				EF34EDAE1AC7FAAA00AE6C61 /* AppDelegate.m in Sources */,
 				EF461D5B1AC80B2D006F6A75 /* RepositoryDataProvider.m in Sources */,
-				EF34EDF51AC8038000AE6C61 /* Pullrequests.m in Sources */,
-				EF34EDF21AC8038000AE6C61 /* Html.m in Sources */,
+				EF6675F21AC865E50094D37C /* URLResource.m in Sources */,
+				EF6675EC1AC85C210094D37C /* RepositoryListViewController.m in Sources */,
 				EF34EDF41AC8038000AE6C61 /* Owner.m in Sources */,
-				EF34EDED1AC8038000AE6C61 /* Avatar.m in Sources */,
 				EF34EDFF1AC8067700AE6C61 /* RepositoryListRequest.m in Sources */,
-				EF34EDF01AC8038000AE6C61 /* Commits.m in Sources */,
+				EF01956E1AC86EAA0033C6C3 /* BaseModel.m in Sources */,
+				EF6675EF1AC85C430094D37C /* RepositoryTableViewCell.m in Sources */,
 				EF34EDEF1AC8038000AE6C61 /* Clone.m in Sources */,
 				EF34EDEE1AC8038000AE6C61 /* RepositoryCollection.m in Sources */,
 				EF34EDAB1AC7FAAA00AE6C61 /* main.m in Sources */,
-				EF34EDF81AC8038000AE6C61 /* Watchers.m in Sources */,
-				EF34EDF61AC8038000AE6C61 /* SelfClass.m in Sources */,
-				EF34EDF11AC8038000AE6C61 /* Forks.m in Sources */,
 				EF34EDF31AC8038000AE6C61 /* Links.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,19 +428,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF461D5D1AC80B50006F6A75 /* RepositoryListRequest.m in Sources */,
-				EF461D681AC80B50006F6A75 /* Values.m in Sources */,
+				EF461D681AC80B50006F6A75 /* Repository.m in Sources */,
 				EF461D5C1AC80B2D006F6A75 /* RepositoryDataProvider.m in Sources */,
-				EF461D661AC80B50006F6A75 /* Pullrequests.m in Sources */,
-				EF461D631AC80B50006F6A75 /* Html.m in Sources */,
 				EF461D651AC80B50006F6A75 /* Owner.m in Sources */,
-				EF461D5E1AC80B50006F6A75 /* Avatar.m in Sources */,
-				EF461D611AC80B50006F6A75 /* Commits.m in Sources */,
 				EF461D601AC80B50006F6A75 /* Clone.m in Sources */,
 				EF461D5F1AC80B50006F6A75 /* RepositoryCollection.m in Sources */,
-				EF461D691AC80B50006F6A75 /* Watchers.m in Sources */,
 				EF461D6B1AC80F0D006F6A75 /* RepositoryDataProviderTest.m in Sources */,
-				EF461D671AC80B50006F6A75 /* SelfClass.m in Sources */,
-				EF461D621AC80B50006F6A75 /* Forks.m in Sources */,
 				EF461D641AC80B50006F6A75 /* Links.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,7 +562,6 @@
 					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"/**",
 					"\"${PODS_ROOT}/Headers/Public/MTDates\"/**",
 					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"/**",
-					"${PODS_ROOT}/**",
 				);
 				INFOPLIST_FILE = iOSFever/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -601,7 +592,9 @@
 		};
 		EF34EDCC1AC7FAAB00AE6C61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D872233A56AFDCFA074C292B /* Pods.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -620,7 +613,9 @@
 		};
 		EF34EDCD1AC7FAAB00AE6C61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB8272BEE9E60527C79217F6 /* Pods.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
