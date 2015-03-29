@@ -3,7 +3,7 @@
 //  iOSFever
 //
 //  Created by Sandor Gazdag on 29/03/15.
-//  
+//
 //
 
 #import "RepositoryListViewController.h"
@@ -28,8 +28,13 @@
 	[super viewDidLoad];
 
 	_repositoryProvider = [[RepositoryDataProvider alloc] init];
+
+	__weak typeof(self) weakSelf = self;
 	[_repositoryProvider repositoryPageWithCompletion: ^(NSArray *repositories, NSError *error) {
-	    [_tableView reloadData];
+	    typeof(self) strongSelf = weakSelf;
+	    if (strongSelf) {
+	        [strongSelf->_tableView reloadData];
+		}
 	}];
 }
 
@@ -40,8 +45,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    Repository *const repository = _repositoryProvider.repositoryList[indexPath.row];
+	Repository *const repository = _repositoryProvider.repositoryList[indexPath.row];
 	NSURL *const avatarURL = [NSURL URLWithString:repository.owner.links.avatar.href];
 
 	RepositoryTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RepositoryTableViewCell" forIndexPath:indexPath];
@@ -57,8 +61,13 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.row == [_repositoryProvider.repositoryList count] - 1) {
+
+        __weak typeof(self) weakSelf = self;
 		[_repositoryProvider nextRepositoryPageWithCompletion: ^(NSArray *repositories, NSError *error) {
-		    [_tableView reloadData];
+		    typeof(self) strongSelf = weakSelf;
+		    if (strongSelf) {
+		        [strongSelf->_tableView reloadData];
+			}
 		}];
 	}
 }
