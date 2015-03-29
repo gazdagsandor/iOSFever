@@ -30,6 +30,7 @@
 	_repositoryProvider = [[RepositoryDataProvider alloc] init];
 
 	__weak typeof(self) weakSelf = self;
+
 	[_repositoryProvider repositoryPageWithCompletion: ^(NSArray *repositories, NSError *error) {
 	    typeof(self) strongSelf = weakSelf;
 	    if (strongSelf) {
@@ -61,8 +62,8 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
 	if (indexPath.row == [_repositoryProvider.repositoryList count] - 1) {
+		__weak typeof(self) weakSelf = self;
 
-        __weak typeof(self) weakSelf = self;
 		[_repositoryProvider nextRepositoryPageWithCompletion: ^(NSArray *repositories, NSError *error) {
 		    typeof(self) strongSelf = weakSelf;
 		    if (strongSelf) {

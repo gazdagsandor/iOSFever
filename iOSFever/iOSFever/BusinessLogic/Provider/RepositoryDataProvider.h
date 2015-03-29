@@ -3,7 +3,7 @@
 //  iOSFever
 //
 //  Created by Sandor Gazdag on 29/03/15.
-//  
+//
 //
 
 @import Foundation;
@@ -18,7 +18,7 @@ typedef void (^RepositoriesListCompletionBlock)(NSArray *repositories, NSError *
 
 /**
  * Responsible for handling the repository related requests with the bitbucket API
-*repositories endpoint
+ * repositories endpoint
  *
  * For further clarification see the following link:
  * https://confluence.atlassian.com/display/BITBUCKET/repositories+Endpoint

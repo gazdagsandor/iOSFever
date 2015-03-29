@@ -27,31 +27,27 @@
 #pragma mark - Public
 
 - (void)repositoryPageWithCompletion:(RepositoriesListCompletionBlock)completionBlock {
-
-    RepositoryListRequest *request = [[RepositoryListRequest alloc] init];
+	RepositoryListRequest *request = [[RepositoryListRequest alloc] init];
 	[request repositoriesWithCompletion: ^(RepositoryCollection *response, NSError *error) {
-	    
-        // If no next page url is supplied added then setting a clean list for Repository instances
+	    // If no next page url is supplied added then setting a clean list for Repository instances
 	    if (!self.nextPageURL || (NSNull *)self.nextPageURL == [NSNull null]) {
 	        _repositoryList = [NSMutableArray arrayWithArray:response.values];
 		}
-        
+
 	    if (error) {
 	        completionBlock(nil, error);
 	        return;
 		}
-	    
-        self.nextPageURL = response.next;
+
+	    self.nextPageURL = response.next;
 	    completionBlock(response.values, nil);
 	}];
 }
 
 - (void)nextRepositoryPageWithCompletion:(RepositoriesListCompletionBlock)completionBlock {
-
-    RepositoryListRequest *request = [[RepositoryListRequest alloc] init];
+	RepositoryListRequest *request = [[RepositoryListRequest alloc] init];
 	[request repositoriesViaURL:self.nextPageURL completion: ^(RepositoryCollection *response, NSError *error) {
-
-        if (error) {
+	    if (error) {
 	        completionBlock(nil, error);
 	        return;
 		}

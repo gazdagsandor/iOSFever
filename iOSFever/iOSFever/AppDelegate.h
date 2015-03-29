@@ -3,7 +3,7 @@
 //  iOSFever
 //
 //  Created by Sandor Gazdag on 29/03/15.
-//  
+//
 //
 
 #import <UIKit/UIKit.h>
@@ -14,4 +14,3 @@
 
 
 @end
-

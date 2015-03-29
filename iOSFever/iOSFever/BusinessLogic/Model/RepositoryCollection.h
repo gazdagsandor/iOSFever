@@ -2,7 +2,7 @@
 //  BaseClass.h
 //
 //  Created by Sandor Gazdag on 29/03/15
-//  
+//
 //
 
 #import "BaseModel.h"
