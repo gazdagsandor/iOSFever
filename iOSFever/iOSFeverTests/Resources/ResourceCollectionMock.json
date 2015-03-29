@@ -1,0 +1,66 @@
+{
+    "pagelen": 10,
+    "values": [{
+               "scm": "hg",
+               "has_wiki": true,
+               "description": "repository description",
+               "links": {
+               "watchers": {
+               "href": "https://watchers"
+               },
+               "commits": {
+               "href": "https://commits"
+               },
+               "self": {
+               "href": "https://api.bitbucket.org/2.0/repositories/bebac/cpp-unit-test"
+               },
+               "html": {
+               "href": "https://bitbucket.org/bebac/test-repo"
+               },
+               "avatar": {
+               "href": "https://avatar"
+               },
+               "forks": {
+               "href": "https://forks"
+               },
+               "clone": [{
+                         "href": "https://clone",
+                         "name": "https"
+                         }, {
+                         "href": "ssh://clone",
+                         "name": "ssh"
+                         }],
+               "pullrequests": {
+               "href": "https://pullrequests"
+               }
+               },
+               "fork_policy": "allow_forks",
+               "name": "test-repo",
+               "language": "en",
+               "created_on": "2008-07-12T05:19:37.079839+00:00",
+               "full_name": "testuser/test-repo",
+               "has_issues": true,
+               "owner": {
+               "username": "testuser",
+               "display_name": "Test User",
+               "uuid": "{123123123}",
+               "links": {
+               "self": {
+               "href": "https://test-user"
+               },
+               "html": {
+               "href": "https://bitbucket.org/test-user"
+               },
+               "avatar": {
+               "href": "https://avatar"
+               }
+               }
+               },
+               "updated_on": "2012-06-24T17:36:51.485049+00:00",
+               "size": 20377,
+               "is_private": false,
+               "uuid": "{2a8b27dc-4671-42e4-bf09-81970ca80b3f}"
+               }],
+    "page": 2,
+    "next": "https://api.bitbucket.org/2.0/repositories?after=2008-07-12T07%3A44%3A01.476818%2B00%3A00&page=3"
+}

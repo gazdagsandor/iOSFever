@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		368A90B5C23C829586704AE8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57026D0AFE891AB3E248938F /* libPods.a */; };
 		EF01956E1AC86EAA0033C6C3 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01956D1AC86EAA0033C6C3 /* BaseModel.m */; };
+		EF0195701AC8772B0033C6C3 /* RepositoryCollectionDeserializationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF01956F1AC8772B0033C6C3 /* RepositoryCollectionDeserializationTest.m */; };
+		EF0195731AC8775D0033C6C3 /* ResourceCollectionMock.json in Resources */ = {isa = PBXBuildFile; fileRef = EF0195721AC8775D0033C6C3 /* ResourceCollectionMock.json */; };
 		EF34EDAB1AC7FAAA00AE6C61 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDAA1AC7FAAA00AE6C61 /* main.m */; };
 		EF34EDAE1AC7FAAA00AE6C61 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF34EDAD1AC7FAAA00AE6C61 /* AppDelegate.m */; };
 		EF34EDB41AC7FAAA00AE6C61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF34EDB21AC7FAAA00AE6C61 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 		D872233A56AFDCFA074C292B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		EF01956C1AC86EAA0033C6C3 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
 		EF01956D1AC86EAA0033C6C3 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		EF01956F1AC8772B0033C6C3 /* RepositoryCollectionDeserializationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepositoryCollectionDeserializationTest.m; sourceTree = "<group>"; };
+		EF0195721AC8775D0033C6C3 /* ResourceCollectionMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ResourceCollectionMock.json; sourceTree = "<group>"; };
 		EF34EDA51AC7FAAA00AE6C61 /* iOSFever.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFever.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF34EDA91AC7FAAA00AE6C61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF34EDAA1AC7FAAA00AE6C61 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +131,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF0195711AC8773C0033C6C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF0195721AC8775D0033C6C3 /* ResourceCollectionMock.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EF34ED9C1AC7FAAA00AE6C61 = {
 			isa = PBXGroup;
 			children = (
@@ -173,8 +185,10 @@
 		EF34EDC11AC7FAAB00AE6C61 /* iOSFeverTests */ = {
 			isa = PBXGroup;
 			children = (
+				EF0195711AC8773C0033C6C3 /* Resources */,
 				EF461D6A1AC80F0D006F6A75 /* RepositoryDataProviderTest.m */,
 				EF34EDC21AC7FAAB00AE6C61 /* Supporting Files */,
+				EF01956F1AC8772B0033C6C3 /* RepositoryCollectionDeserializationTest.m */,
 			);
 			path = iOSFeverTests;
 			sourceTree = "<group>";
@@ -364,6 +378,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0195731AC8775D0033C6C3 /* ResourceCollectionMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +446,7 @@
 				EF461D681AC80B50006F6A75 /* Repository.m in Sources */,
 				EF461D5C1AC80B2D006F6A75 /* RepositoryDataProvider.m in Sources */,
 				EF461D651AC80B50006F6A75 /* Owner.m in Sources */,
+				EF0195701AC8772B0033C6C3 /* RepositoryCollectionDeserializationTest.m in Sources */,
 				EF461D601AC80B50006F6A75 /* Clone.m in Sources */,
 				EF461D5F1AC80B50006F6A75 /* RepositoryCollection.m in Sources */,
 				EF461D6B1AC80F0D006F6A75 /* RepositoryDataProviderTest.m in Sources */,
